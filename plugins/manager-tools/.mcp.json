@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "postgres-agent": {
+      "type": "stdio",
+      "command": "cmd.exe",
+      "args": ["/d", "/q", "/c", "${CLAUDE_PLUGIN_ROOT}/scripts/run-bridge.cmd"]
+    },
+    "atlassian": { "type": "http", "url": "https://mcp.atlassian.com/v2/mcp" },
+    "zoho-crm": { "type": "http", "url": "https://claude-zohocrm.zohomcp.com/mcp/message" }
+  }
+}

@@ -1,0 +1,2 @@
+# Written by `cargo xtask kit public`. Git stores the launcher's CRLF line endings as they are.
+*.cmd -text

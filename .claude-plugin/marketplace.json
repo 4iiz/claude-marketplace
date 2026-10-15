@@ -1,0 +1,14 @@
+{
+  "description": "4IIZ MCP servers for Claude Code on personal and Team accounts, until Claude Enterprise",
+  "name": "4iiz-public",
+  "owner": {
+    "name": "4IIZ"
+  },
+  "plugins": [
+    {
+      "description": "The firm's MCP servers for Claude Code: postgres-agent (reporting databases), Atlassian (Jira, Confluence) and Zoho CRM, each signed in as you. /manager-tools:setup-check also checks the Microsoft 365 connector.",
+      "name": "manager-tools",
+      "source": "./plugins/manager-tools"
+    }
+  ]
+}
