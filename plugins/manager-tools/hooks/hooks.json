@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "wscript.exe",
+            "args": ["//B", "//Nologo", "${CLAUDE_PLUGIN_ROOT}\\hooks\\version-log.js"]
+          }
+        ]
+      }
+    ]
+  }
+}
