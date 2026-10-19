@@ -1,6 +1,6 @@
 # Process record: <function name>
 
-- **Planet (stage):** <one of Lead, Conversation, Appointment Set, Show, Hired, Ready to File, Filed, Approved>
+- **Planet (stage):** <number and name, 1 to 16, from the `firm-context` table, for example "11 Document Collection"; then the milestone it reaches, for example "Ready to File">
 - **Owner:** <the manager's name and role>
 - **Recorded:** <YYYY-MM-DD>, interview with Claude Code (process-capture skill)
 - **Status:** proposed (a manager's own account; not yet a firm standard)

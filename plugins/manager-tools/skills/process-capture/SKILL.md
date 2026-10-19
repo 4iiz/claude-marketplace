@@ -15,7 +15,7 @@ Two modes. Pick one from what the manager says, or ask which they want:
 ## Before you start
 
 1. Read `processes/` in the working folder if it exists. If a record for this function exists, say so, read it, and switch to the **What is new today** mode unless the manager wants to redo it.
-2. Read `CLAUDE.md` in the working folder for the manager's name, function and planet (stage). If it has no function yet, the first question is which function this is.
+2. Read `CLAUDE.md` in the working folder for the manager's name, function and planet (stage, 1 to 16). If it has no function yet, the first question is which function this is.
 3. Use the firm's canonical terms (the `firm-context` skill). When the manager uses a word you do not know, ask what it means and record their definition.
 
 ## 1. The function in one picture
@@ -23,7 +23,7 @@ Two modes. Pick one from what the manager says, or ask which they want:
 Ask one question at a time. Wait for the answer. Reflect it back in one sentence before the next question.
 
 - What is this function for, in one sentence: what comes in, what goes out, and who is waiting for it?
-- Which stage of the pipeline does it serve? (Lead, Conversation, Appointment Set, Show, Hired, Ready to File, Filed, Approved.) If the manager says "several", ask which one most of the work belongs to.
+- Which stage of the client journey does it serve? Use the 16 stages in the `firm-context` skill's table, by number and name ("stage 11, Document Collection"). If the manager answers with a milestone (Lead, Conversation, Appointment Set, Show, Hired, Ready to File, Filed, Approved), ask which of that milestone's stages; if "several", ask which one most of the work belongs to.
 - Who does the work: how many people, which roles, which offices?
 - What systems does the work happen in? (Zoho, 4Ease, Office, Confluence, Teams, email, phone, spreadsheets.)
 - What numbers tell you yesterday went well or badly? Which of those numbers do you see every day, and where?
@@ -75,7 +75,7 @@ When the interview is done, or the manager says "write it up":
 
 1. Write `processes/<function-slug>.md` in the working folder using `process-record-template.md` in this skill's folder. Fill every section; where the manager did not know, write "Not known" rather than guessing. Use the manager's words for steps and rules; put your own observations under "Interviewer's notes", marked as such.
 2. Show the manager the record and ask what is wrong. Fix it. Do not stop until they say it is right for today.
-3. Save a shared memory entry with the postgres-agent `remember` tool: kind `fact`, title `Process record: <function> (<planet>)`, body = the one-sentence purpose, the stage, the systems, the numbers and the list of step names, and the path of the record file. Do not put a person's name in the body unless they are the function's named owner. If `remember` is not available, say so and leave the record on disk.
+3. Save a shared memory entry with the postgres-agent `remember` tool: kind `fact`, title `Process record: <function> (<planet>)`, body = the one-sentence purpose, the stage (number and name) and the milestone it reaches, the systems, the numbers and the list of step names, and the path of the record file. Do not put a person's name in the body unless they are the function's named owner. If `remember` is not available, say so and leave the record on disk.
 4. Say what was captured in three lines, and what is still "Not known".
 
 ## What never goes in a record
