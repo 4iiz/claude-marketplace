@@ -15,7 +15,7 @@ Two modes. Pick one from what the manager says, or ask which they want:
 ## Before you start
 
 1. Read `processes/` in the working folder if it exists. If a record for this function exists, say so, read it, and switch to the **What is new today** mode unless the manager wants to redo it.
-2. Read `CLAUDE.md` in the working folder for the manager's name, function and planet (stage, 1 to 16). If it has no function yet, the first question is which function this is.
+2. Read `CLAUDE.md` in the working folder for the manager's name, function and planet (stage, 1 to 16), and its `Language:` line (`en` or `es`): hold the interview in that language and write the record's free-text fields in it; English when the line is absent. If it has no function yet, the first question is which function this is.
 3. Use the firm's canonical terms (the `firm-context` skill). When the manager uses a word you do not know, ask what it means and record their definition.
 
 ## 1. The function in one picture

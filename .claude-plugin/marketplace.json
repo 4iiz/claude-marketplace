@@ -6,7 +6,7 @@
   },
   "plugins": [
     {
-      "description": "The firm's MCP servers for Claude Code: postgres-agent (reporting databases), Atlassian (Jira, Confluence) and Zoho CRM, each signed in as you; /manager-tools:setup-check also checks Microsoft 365. The process-capture skill interviews a manager and writes the process record.",
+      "description": "The firm's MCP servers for Claude Code: postgres-agent (reporting databases), Atlassian (Jira, Confluence) and Zoho CRM, each signed in as you; /manager-tools:setup-check also checks Microsoft 365. Skills: process-capture, interviewer, communicator (EN/ES), challenger.",
       "name": "manager-tools",
       "source": "./plugins/manager-tools"
     }
